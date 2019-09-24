@@ -17,7 +17,7 @@ import com.training.utility.DriverNames;
 
 public class LoginTests {
 
-	private WebDriver driver;
+	WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
 	private static Properties properties;
@@ -50,6 +50,6 @@ public class LoginTests {
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		screenShot.captureScreenShot("AdminLogin1");
 	}
 }
